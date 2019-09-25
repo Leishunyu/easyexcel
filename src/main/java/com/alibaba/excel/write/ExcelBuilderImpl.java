@@ -101,6 +101,11 @@ public class ExcelBuilderImpl implements ExcelBuilder {
     }
 
     @Override
+    public void setPassword(String password) {
+        context.setPassword(password);
+    }
+
+    @Override
     public void finish() {
         if (context != null) {
             context.finish();

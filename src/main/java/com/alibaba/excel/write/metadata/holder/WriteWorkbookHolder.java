@@ -77,6 +77,11 @@ public class WriteWorkbookHolder extends AbstractWriteHolder {
      */
     private Map<Integer, Integer> templateLastRowMap;
 
+    /**
+     * password
+     */
+    private String password;
+
     public WriteWorkbookHolder(WriteWorkbook writeWorkbook) {
         super(writeWorkbook, null, writeWorkbook.getConvertAllFiled());
         this.writeWorkbook = writeWorkbook;
@@ -207,6 +212,14 @@ public class WriteWorkbookHolder extends AbstractWriteHolder {
 
     public void setTemplateLastRowMap(Map<Integer, Integer> templateLastRowMap) {
         this.templateLastRowMap = templateLastRowMap;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override

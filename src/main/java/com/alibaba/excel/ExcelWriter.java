@@ -306,4 +306,12 @@ public class ExcelWriter {
     public WriteContext writeContext() {
         return excelBuilder.writeContext();
     }
+
+    /**
+     * doEncrypt
+     * @param password
+     */
+    public void doEncrypt(String password){
+        excelBuilder.setPassword(password);
+    }
 }

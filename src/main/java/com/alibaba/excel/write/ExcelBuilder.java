@@ -37,6 +37,12 @@ public interface ExcelBuilder {
     void addContent(List data, WriteSheet writeSheet, WriteTable writeTable);
 
     /**
+     * encrypt
+     *
+     * @param password
+     */
+    void setPassword(String password);
+    /**
      * Creates new cell range. Indexes are zero-based.
      *
      * @param firstRow
